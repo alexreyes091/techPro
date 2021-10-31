@@ -362,15 +362,20 @@ img {
 /* SECCTION NEWSLETTER */
 
 .newsletter {
-
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(../img/newsletter.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%, 70rem;
 }
 
 .contenido-newsletter {
-
+    display: grid;
+    grid-template-rows: repeat(2, 30rem);
+    gap: var(--separacion);
 }
 
 .text-newsletter {
-
+    grid-row: 2 / 3;
 }
 
 .formulario {
